@@ -1446,7 +1446,7 @@ ul.plain li::before { color:var(--p-i-ink); }
   </div>
 </section>
 
-<section data-element="donow" class="slide g-well" data-timer="360" data-timer-group="donow" id="doNowSlide" data-notes="&lt;strong&gt;Do Now, 6 minutes on the printed Student Sheet. Start the clock top left.&lt;/strong&gt; Blank first: the sheet and a pen, answers on the back. Take the register while they write, then circulate. &lt;strong&gt;The ring walks on NEXT, inside the same 6 minutes:&lt;/strong&gt; Do Now 1 (define predict), Do Now 2 (define modify), Do Now 3 (define estimate), then the Hint for anyone stuck, then the Challenge for anyone who finishes early. &lt;strong&gt;The Hint:&lt;/strong&gt; think about your car: what you think it will do, what you change, and roughly how far it goes. &lt;strong&gt;The Challenge:&lt;/strong&gt; use all three words in one sentence about coding your square. Next is the Turn and Talk, which is the check on these three words, so nothing is read out here. Say nothing about the answers yet: the words get checked together.">
+<section data-element="donow" class="slide g-well" data-timer="360" data-timer-group="donow" id="doNowSlide" data-notes="&lt;strong&gt;Do Now, 6 minutes on the printed Student Sheet. Start the clock top left.&lt;/strong&gt; Blank first: the sheet and a pen, answers on the back. Take the register while they write, then circulate. &lt;strong&gt;The ring walks on NEXT, inside the same 6 minutes:&lt;/strong&gt; Do Now 1 (explain what the word predict means), Do Now 2 (modify), Do Now 3 (estimate), then the Hint for anyone stuck, then the Challenge for anyone who finishes early. &lt;strong&gt;The Hint:&lt;/strong&gt; think about your car: what you think it will do, what you change, and roughly how far it goes. &lt;strong&gt;The Challenge:&lt;/strong&gt; use all three words in one sentence about coding your square. Next is the Turn and Talk, which is the check on these three words, so nothing is read out here. Say nothing about the answers yet: the words get checked together.">
   <div class="slide-content" style="max-width:min(96vw,2400px)">
     <p class="eyebrow reveal">// do_now</p>
     <h2 class="reveal" style="margin-bottom:calc(var(--element-gap) * 0.35)">Do Now</h2>
@@ -1980,7 +1980,7 @@ ul.plain li::before { color:var(--p-i-ink); }
    name, so a hide survives a refresh mid-lesson but never outlives a push.
    Everything else (font scale, teacher toggle, iSAMS state, timers) stays session-only. */
 const SHEET_URL = 'https://docs.google.com/presentation/d/1FfpzV293fRHohL2V64Vb4yLowLoq3jUKEjjXhjS_lIY/edit';
-const DECK_VERSION = 'v20261007-1200';
+const DECK_VERSION = 'v20261007-1240';
 
 /* ===========================================
    RUNTIME_STRIP: everything the boot code builds or writes at run time.
@@ -2039,9 +2039,13 @@ const ELEMENTS = [
   { id: 'prep',    name: 'Pre and Post List', prep: true, items: [
     { text: 'Print 20 copies of the one page Student Sheet.', link: 'sheet file',
       href: 'https://docs.google.com/presentation/d/1FfpzV293fRHohL2V64Vb4yLowLoq3jUKEjjXhjS_lIY/edit' },
-    { text: 'Print and hide Secret Challenge card 9, The Car That Stops Itself (from the Spike Prime bank), in an envelope with the flap tucked in, not sealed, somewhere in IG04.' },
+    { text: 'Print and hide Secret Challenge card 9, The Car That Stops Itself (page 1 of the print Doc), in an envelope with the flap tucked in, not sealed, somewhere in IG04.', link: 'print Doc',
+      href: 'https://docs.google.com/document/d/1tF4Pw7La1ALdFHsTQrJn_I16Js-V-Hk7Wn0bRAhUApM/edit' },
     { text: 'Soft boxes ready for the Secret Challenge, one for the end of every straight.' },
-    { text: 'The two role cards, Coder and Course Designer, are in the deck: nothing to print.' },
+    { text: 'Print the two role cards, Coder and Course Designer (pages 2 and 3 of the print Doc). They are also on slide 7.', link: 'role cards',
+      href: 'https://docs.google.com/document/d/1tF4Pw7La1ALdFHsTQrJn_I16Js-V-Hk7Wn0bRAhUApM/edit' },
+    { text: 'Tracking sheet open on your laptop: column T shows who finished the Square Coding Challenge; car numbers for the iPad.', link: 'tracking sheet',
+      href: 'https://docs.google.com/spreadsheets/d/1TFUbZ6vhZF1lvIkHHocAjgUEoSKXsJ0LRJWBRlT8oGo/edit' },
     { text: 'Pencils out for the square and the courses: at least 8 per student, in boxes where anyone can take them. Rulers and metre rulers too.' },
     { text: 'The four card suit signs are up in IG04, one in each corner (Spades, Hearts, Diamonds, Clubs), for Four Corners. The deck draws the card.' },
     { text: 'Laptops charged, chargers near; spare headphones; the kits\' USB cables within reach as the fallback.' },
